@@ -1,0 +1,427 @@
+/* Page */
+
+.page {
+    height: 100%;
+}
+
+.page__body {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    min-height: 100%;
+    width: 100%;
+}
+
+.page__wrapper {
+    
+}
+
+/* page-header */
+
+.page-header {
+
+}
+
+/* main-nav */
+
+.main-nav {
+    display: flex;
+    position: relative;
+}
+
+.main-nav__logo {
+    position: absolute;       
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.main-nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* site-list */
+
+.site-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.site-list__item {
+
+}
+
+.site-list__link {
+
+}
+
+/* page-main */ 
+
+.page-main {
+    padding-top: 80px;
+}
+
+/* intro */ 
+
+.intro {
+    background-image: url(img/intro_roses.jpg), url(img/intro_tulips.jpg);
+    background-repeat: no-repeat;
+    background-position: right 0px, 600px 0px
+}
+
+.intro__text-container {
+    width: 384px;
+    margin-bottom: 300px;
+}
+
+.intro__title {
+
+}
+
+.intro__text {
+
+}
+
+.intro__button {
+
+}
+
+.intro__advantages {
+
+}
+
+/* advantages */ 
+
+.advantages {
+
+}
+
+.advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages__item {
+
+}
+
+.advantages__sub-title {
+
+}
+
+.advantages__text {
+
+}
+
+/* slider */
+
+.slider {
+
+}
+
+.slider__title {
+
+}
+
+.slider__card {
+
+}
+
+.slider__text {
+
+}
+
+.slider__sub-title {
+
+}
+
+.slider__desc {
+
+}
+
+.slider__size {
+
+}
+
+.slider__price {
+
+}
+
+.slider__button {
+
+}
+.slider__img {
+
+}
+
+.slider__scroll {
+
+}
+
+/* scroll */
+
+.scroll {
+
+}
+
+.scroll__button {
+
+}
+
+/* catalog */
+
+.catalog {
+
+}
+
+.catalog__card {
+
+}
+
+.catalog__link {
+
+}
+
+.catalog__link--wedding {
+
+}
+
+.catalog__link--pions {
+
+}
+
+.catalog__link--choose {
+
+}
+
+.catalog__sub-title {
+
+}
+
+.catalog__text {
+
+}
+
+/* bonus */
+
+.bonus {
+
+}
+
+.bonus__text {
+
+}
+
+.bonus__title {
+
+}
+
+.bonus__desc {
+
+}
+
+/* order */
+
+.order {
+
+}
+
+.order__title {
+
+}
+
+.order__list {
+
+}
+
+.order__item {
+
+}
+
+.order__item--choise {
+
+}
+
+.order__item--call {
+
+}
+
+.order__item--pay {
+
+}
+
+.order__item--delivery {
+
+}
+
+.order__sub-title {
+
+}
+
+.order__sub-text {
+
+}
+
+/* news */
+
+.news{
+
+}
+
+.news__title {
+
+}
+
+.news__text {
+
+}
+
+.news__sub-title {
+
+}
+
+.news__sub-text {
+
+}
+
+.news__social-list {
+
+}
+
+.social-list {
+
+}
+
+.social-list__item {
+
+}
+
+.social-list__link {
+
+}
+
+.social-list__icon {
+
+}
+
+/* review */
+
+.review {
+
+}
+
+.review__title {
+
+}
+
+.review__list {
+
+}
+
+.review__item {
+
+}
+
+.review__text {
+
+}
+
+.review__author {
+
+}
+
+/* page-footer */
+
+.page-footer {
+
+}
+
+/* map */
+
+.map {
+
+}
+
+.map__card {
+
+}
+
+/* contacts */
+
+.contacts {
+
+}
+
+.contacts__title {
+
+}
+
+.contacts__sub-title {
+
+}
+
+.contacts__sub-text {
+
+}
+
+.contacts__address {
+
+}
+
+.contacts__phone {
+
+}
+
+.contacts__mail {
+
+}
+
+/* footer-nav */
+
+.footer-nav {
+
+}
+
+.footer-nav__logo {
+
+}
+
+.footer-nav__list {
+
+}
+
+.footer-nav__social-list {
+
+}
+
+/* logo */
+
+.logo {
+
+}
+
+.logo__img {
+
+}
+
+/* Разное */
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
