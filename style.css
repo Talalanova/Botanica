@@ -1,3 +1,15 @@
+/* Шрифты, цвет текста, кнопок */
+
+:root {
+    --accent-font: "Playfair Display", "Arial", sans-serif;
+    --main-font: "Montserrat", "Arial", sans-serif;
+
+    --main-text-color: #AE7C78;
+    --contrast-text-color: #ffffff;
+
+    --button-color: #D89999;
+}
+
 /* Page */
 
 .page {
@@ -9,6 +21,9 @@
     grid-template-rows: min-content 1fr min-content;
     min-height: 100%;
     width: 100%;
+    font-family: var(--main-font);
+    font-weight: 400;
+    color: var(--main-text-color);
 }
 
 .page__wrapper {
@@ -26,6 +41,9 @@
 .main-nav {
     display: flex;
     position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 0;
 }
 
 .main-nav__logo {
@@ -59,7 +77,7 @@
 /* page-main */ 
 
 .page-main {
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 /* intro */ 
@@ -67,20 +85,25 @@
 .intro {
     background-image: url(img/intro_roses.jpg), url(img/intro_tulips.jpg);
     background-repeat: no-repeat;
-    background-position: right 0px, 600px 0px
+    background-position: right 0px, 410px 30px;
+    padding-top: 40px;
 }
 
 .intro__text-container {
     width: 384px;
-    margin-bottom: 300px;
+    margin-bottom: 120px;
 }
 
 .intro__title {
-
+    font-family: var(--accent-font);
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 59px;
 }
 
 .intro__text {
-
+    font-size: 24px;
+    line-height: 29px;
 }
 
 .intro__button {
@@ -100,10 +123,11 @@
 .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 50px;
+    column-gap: 100px;
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-left: 90px;
 }
 
 .advantages__item {
@@ -111,25 +135,65 @@
 }
 
 .advantages__sub-title {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
 
+.advantages__sub-title--car::before {
+    content: "";
+    position: absolute;
+    background-image: url(img/advantages-order_auto.svg);
+    background-repeat: no-repeat;
+    width: 82px;
+    height: 52px;
+    left: -90px;
+}
+
+.advantages__sub-title--flowers::before {
+    content: "";
+    position: absolute;
+    background-image: url(img/advantages_bouquet.svg);
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    left: -70px;
+}
+
+.advantages__sub-title--photo::before {
+    content: "";
+    position: absolute;
+    background-image: url(img/advantages_photo.svg);
+    background-repeat: no-repeat;
+    width: 58px;
+    height: 52px;
+    left: -70px;
 }
 
 .advantages__text {
-
+    font-size: 16px;
+    line-height: 20px;
 }
 
 /* slider */
 
 .slider {
-
+    width: 795px;
+    margin: 0 auto;
+    padding-bottom: 80px;
 }
 
 .slider__title {
-
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: 36px;
+    line-height: 48px;
 }
 
 .slider__card {
-
+    display: flex;
+    margin-bottom: 20px;
 }
 
 .slider__text {
@@ -137,19 +201,25 @@
 }
 
 .slider__sub-title {
-
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 .slider__desc {
-
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .slider__size {
-
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .slider__price {
-
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 .slider__button {
@@ -166,111 +236,196 @@
 /* scroll */
 
 .scroll {
-
+    width: 150px;
+    margin: 0 auto;
 }
 
 .scroll__button {
-
+    border: none;
+    background-color: white;
 }
 
 /* catalog */
 
 .catalog {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 19px;
+    margin: 0 auto;
+    padding-bottom: 60px;
 }
 
 .catalog__card {
-
+    text-align: center;
 }
 
 .catalog__link {
-
+    text-decoration: none;
+    color: var(--contrast-text-color);
+    display: inline-block;
+    height: 443px;
+    width: 387px;
 }
 
 .catalog__link--wedding {
-
+    display: inline-block;
+    background-image: url(img/catalog_banner.svg),url(img/catalog_wedding.jpg);
+    background-repeat: no-repeat;
 }
 
-.catalog__link--pions {
-
+.catalog__link--pions {    
+    background-image: url(img/catalog_banner.svg),url(img/catalog_pions.jpg);
+    background-repeat: no-repeat;
+    height: 443px;    
 }
 
-.catalog__link--choose {
-
+.catalog__link--choose {    
+    background-image: url(img/catalog_banner.svg),url(img/catalog_bouquet.jpg);
+    background-repeat: no-repeat;
+    height: 443px;
 }
 
 .catalog__sub-title {
-
+    font-family: var(--accent-font);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    margin-top: 182px;
+    margin-bottom: 8px;
 }
 
 .catalog__text {
-
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
 }
 
 /* bonus */
 
 .bonus {
-
+    background-color: #AE7C78;
+    background-image: url(img/bonus_bouquet.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 391px;
 }
 
 .bonus__text {
-
+    width: 500px;
+    color: var(--contrast-text-color);
+    padding-top: 40px;
+    padding-left: 102px;
 }
 
 .bonus__title {
-
+    font-family: var(--accent-font);
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    font-size: 44px;
+    line-height: 59px;
+    margin: 0; 
 }
 
 .bonus__desc {
-
+    font-size: 24px;
+    line-height: 29px;
 }
 
 /* order */
 
 .order {
-
+    text-align: center;
 }
 
 .order__title {
-
+    font-family: var(--accent-font);
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
 }
 
 .order__list {
-
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    margin: 0;
+    padding: 0;
+    padding-top: 90px;
 }
 
 .order__item {
 
 }
 
-.order__item--choise {
-
+.order__sub-title--choise,
+.order__sub-title--call,
+.order__sub-title--pay,
+.order__sub-title--delivery {
+    position: relative;
 }
 
-.order__item--call {
 
+.order__sub-title--choise::before {
+    position: absolute;
+    content: '';
+    height: 52px;
+    width: 67px;
+    background-image: url(img/order_device.svg);
+    background-repeat: no-repeat;
+    top: -70px;
 }
 
-.order__item--pay {
-
+.order__sub-title--call::before {
+    position: absolute;
+    content: '';
+    height: 52px;
+    width: 38px;
+    background-image: url(img/order_manager.svg);
+    background-repeat: no-repeat;
+    top: -70px;
 }
 
-.order__item--delivery {
-
+.order__sub-title--pay::before {
+    position: absolute;
+    content: '';
+    height: 52px;
+    width: 70px;
+    background-image: url(img/order_paycard.svg);
+    background-repeat: no-repeat;
+    top: -70px;
 }
+
+.order__sub-title--delivery::before {
+    position: absolute;
+    content: '';
+    height: 52px;
+    width: 83px;
+    background-image: url(img/advantages-order_auto.svg);
+    background-repeat: no-repeat;
+    top: -70px;
+} 
 
 .order__sub-title {
-
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .order__sub-text {
-
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 /* news */
 
 .news{
-
+    height: 460px;
+    background-image: url(img/news_1st-bouquet.jpg), url(img/news_2-bouquet.jpg), url(img/news_3d-bouquet.jpg);
+    background-repeat: no-repeat;
+    background-position: 510px 0px, 510px 240px, top right;
+    padding-bottom: 80px;
 }
 
 .news__title {
@@ -278,15 +433,20 @@
 }
 
 .news__text {
-
+    width: 387px;
 }
 
 .news__sub-title {
-
+    font-family: var(--accent-font);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
 }
 
 .news__sub-text {
-
+    font-size: 24px;
+    line-height: 29px;
 }
 
 .news__social-list {
@@ -294,7 +454,12 @@
 }
 
 .social-list {
-
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 98px;
+    justify-content: space-between;
 }
 
 .social-list__item {
@@ -306,21 +471,33 @@
 }
 
 .social-list__icon {
-
+    fill: #D89999
 }
 
 /* review */
 
 .review {
-
+    text-align: center;
+    border: 1px solid var(--main-text-color);
+    
 }
 
 .review__title {
-
+    font-family: var(--accent-font);
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
 }
 
 .review__list {
-
+    list-style: none;
+    margin: 0;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 200px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .review__item {
@@ -328,27 +505,33 @@
 }
 
 .review__text {
-
 }
 
 .review__author {
-
+    font-weight: 500;
 }
 
 /* page-footer */
 
 .page-footer {
-
+    padding-top: 80px;
 }
 
 /* map */
 
 .map {
-
+    height: 644px;
+    background-image: url(img/map.png);
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .map__card {
-
+    position: absolute;
+    background-color: #ffffff;
+    top: 52px;
+    left: 222px;
+    padding: 10px 108px 65px 35px;
 }
 
 /* contacts */
@@ -358,33 +541,47 @@
 }
 
 .contacts__title {
-
+    font-family: var(--accent-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
 }
 
 .contacts__sub-title {
-
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .contacts__sub-text {
-
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .contacts__address {
-
+    font-style: normal;
+    font-weight: 500;
 }
 
 .contacts__phone {
-
+    color: var(--main-text-color);
+    font-weight: 500;
 }
 
 .contacts__mail {
-
+    color: var(--main-text-color);
+    font-weight: 500;
 }
 
 /* footer-nav */
 
 .footer-nav {
-
+    background-color: #AE7C78;
+    display: flex;
+    padding: 30px 115px 25px 125px;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--contrast-text-color);
 }
 
 .footer-nav__logo {
@@ -392,7 +589,9 @@
 }
 
 .footer-nav__list {
-
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-nav__social-list {
@@ -409,7 +608,7 @@
 
 }
 
-/* Разное */
+/* Global */
 
 .visually-hidden {
     position: absolute;
@@ -420,8 +619,20 @@
 }
 
 .container {
-    width: 1440px;
+    width: 1200px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid var(--button-color);
+    background-color: var(--button-color);
+    color: var(--contrast-text-color);
+    border-radius: 40px;
+    padding: 30px 68px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
 }
